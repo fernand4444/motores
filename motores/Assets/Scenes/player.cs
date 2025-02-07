@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour 
 {
+    public int pontos = 0;
     private Transform _transform;
     private Rigidbody2D _rigidbody2D;
     
     public float velocidade = 10f;
     public float forcaPulo = 10f;
+    private SpriteRenderer spriterenderer;
 
     private bool noChao = false;
     
@@ -17,6 +19,7 @@ public class Player : MonoBehaviour
     {
         _transform = gameObject.transform;
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        spriterenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     
@@ -46,12 +49,14 @@ public class Player : MonoBehaviour
         {
             _transform.position -= new Vector3(velocidade*Time.deltaTime,0,0);
            Debug.Log("LeftArrow");
+           spriterenderer.flipX = true;
         }
 
         if(Input.GetKey(KeyCode.RightArrow))
         {
            _transform.position += new Vector3(velocidade*Time.deltaTime,0,0);
            Debug.Log("RightArrow");
+           spriterenderer.flipX = false;
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && noChao == true)
