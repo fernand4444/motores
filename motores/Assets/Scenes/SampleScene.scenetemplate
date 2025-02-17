@@ -12,11 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: SampleScene
   m_EditorClassIdentifier: 
-  templateScene: {fileID: 0}
+  templateScene: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
   templateName: 
   description: 
   preview: {fileID: 0}
-  dependencies: []
+  dependencies:
+  - dependency: {fileID: 2800000, guid: e8a64d8c4d4ea2f438f036ec8c770000, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 9964c12c679656946a5a8ad827b86488, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: b5ec4fb7c76c3ed43929df7486e661fe, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: f1175e94ec4a23f489e5cdc0511e68ae, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 8a7720dc07bb9bf4f862676dc0787cf2, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 1814a61a68edd6e47a7f5bc3281898d8, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 6743635797897015276, guid: 0f6746ef53e118f40990c5e1ee6529f5, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: bfc3ccf5397b892479e964a40107a3d4, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: e04b4b679cd275f4a80b6d98e2c32af1, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 54e027b16e4a74840ade873168b4ab7a, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 4c0a8dc13244b5940949b47d47f51417, type: 3}
+    instantiationMode: 0
   templatePipeline: {fileID: 0}
   badge: {fileID: 0}
   addToDefaults: 0
